@@ -6,10 +6,8 @@ Description:    A 'blank canvas' with Bootstrap for developing WordPress themes.
 Author URI:     http://chrisbishop.me.uk/
 Version:        0.1.0
 License:		Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/. Feel free to make any changes.
-Text Domain: hillriver
+Text Domain: 	blankcanvas
 */
-
-@import url("css/bootstrap.min.css");
 
 /**
  * Global
@@ -151,16 +149,7 @@ footer ul {
 
 .bc-banner {
     background-color: #eee;
-    margin-bottom: 2em;
 }
-.intro-banner {
-    text-align: center;
-    color: #000;
-}
-.bc-post-loop article {
-    margin-bottom: 2em;
-}
-
 
 /**
  * Page & Posts
