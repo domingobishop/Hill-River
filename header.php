@@ -17,18 +17,6 @@
 
 <body <?php body_class(); ?>>
     <header id="head" class="bc-head">
-        <div class="bc-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-2">
-                        <a href="<?php bloginfo('siteurl'); ?>/"
-                           title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,12 +27,15 @@
                     </button>
                     <a class="navbar-brand" href="<?php bloginfo('siteurl'); ?>/"
                        title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                        Hill River
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" class="img-responsive">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <?php wp_nav_menu(array('menu' => 'Menu 1', 'items_wrap' => '<ul class="nav navbar-nav navbar-left" role="menu">%3$s</ul>', 'container' => false)); ?>
+                    <ul class="nav navbar-nav navbar-right call-us">
+                        <li><a href="tel:+61888439178">Call us +61&nbsp;8&nbsp;88439178</a></li>
+                    </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>

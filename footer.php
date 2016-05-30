@@ -5,6 +5,7 @@
     </div>
     <div class="row bc-info">
       <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h4>Hill River Hay</h4>
         <p>
           Copyright © <?php echo date("Y"); ?> <br>
           <small>Website by <a href="http://creatistic.com.au/" target="_blank">Creatistic</a></small>

@@ -4,10 +4,10 @@
 function bc_styles() {
     wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 1.0, 'all' );
     wp_register_style( 'bc-styles', get_template_directory_uri() . '/style.css', array(), 1.0, 'all' );
-    // wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
+    wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Martel|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
     wp_enqueue_style( 'bootstrap' );
     wp_enqueue_style( 'bc-styles' );
-    // wp_enqueue_style( 'google-fonts' );
+    wp_enqueue_style( 'google-fonts' );
 }
 add_action( 'wp_enqueue_scripts', 'bc_styles' );
 
