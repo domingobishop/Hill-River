@@ -10,3 +10,8 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Removes fixed width from .wp-caption div for images
 $(".wp-caption").removeAttr('style');
+
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
