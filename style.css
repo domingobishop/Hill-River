@@ -32,14 +32,19 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 a {
-	color: #000;
+	color: #076324;
 }
 p a {
 	font-weight: 600;
+    text-decoration: underline;
 }
-a:hover, a:focus {
-	color: #000;
+p a:hover, p a:focus {
+    color: #076324;
 	background-color: #ffc423;
+    text-decoration: none;
+}
+a.btn {
+    text-decoration: none;
 }
 
 /**
@@ -100,6 +105,10 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: #ffc423;
+}
+.call-us {
+	padding-top: 19.5px;
+	padding-bottom: 19.5px;
 }
 .call-us a {
 	color: #076324 !important;
@@ -208,6 +217,9 @@ footer ul {
 
 .bc-content {
     margin-bottom: 2em;
+}
+.entry-thumbnail {
+    margin-bottom: 1em;
 }
 
 /**

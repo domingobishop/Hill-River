@@ -70,6 +70,20 @@ function hay_meta_boxes() {
                     'id' => 'home_story',
                     'type' => 'textarea',
                     'std' => ''
+                ),
+                array(
+                    'name' => 'Virtual tour button URL',
+                    'desc' => 'For home page only',
+                    'id' => 'home_tour',
+                    'type' => 'text',
+                    'std' => ''
+                ),
+                array(
+                    'name' => 'Contact us text',
+                    'desc' => 'For home page only',
+                    'id' => 'home_contact',
+                    'type' => 'textarea',
+                    'std' => ''
                 )
             )
         )

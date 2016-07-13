@@ -57,8 +57,7 @@ get_header(); ?>
                     <div class="col-md-12 text-center">
                         <article>
                             <div class="entry-summary">
-                                <?php
-                                $story = get_post_meta( $post->ID, 'home_story', true ); ?>
+                                <?php $story = get_post_meta( $post->ID, 'home_story', true ); ?>
                                     <div class="entry-header">
                                         <h3 class="text-center">
                                             Our story
@@ -69,7 +68,10 @@ get_header(); ?>
                                     </div>
                             </div>
                         </article>
-                        <a href="#" class="btn btn-default">Virtual tour</a>
+                        <?php $tour = get_post_meta( $post->ID, 'home_tour', true );
+                        if ($tour) { ?>
+                            <p><a href="<?php echo $tour; ?>" class="btn btn-default">Virtual tour</a></p>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -88,15 +90,8 @@ get_header(); ?>
                                 <p><strong>Grant Jaeschke</strong><br>
                                     Managing Director</p>
                             </div>
-                            <h4>Hill River Hay</h4>
-                            <p>
-                                Ystalyfera Avenue<br>
-                                PO Box 492<br>
-                                CLARE SA 5453<br>
-                                Office: 08 8843 9178<br>
-                                Fax: 08 8843 9177<br>
-                                E-mail: <a href="mailto:admin@hrhay.com.au">admin@hrhay.com.au</a>
-                            </p>
+                            <?php $contact = get_post_meta( $post->ID, 'home_contact', true ); ?>
+                            <?php echo $contact; ?>
                             <h3>What else we do</h3>
                             <p><a href="#" class="btn btn-default">Jaeschke's Hill River Estate Wine</a> <a href="#" class="btn btn-default">Jaeschke's Broiler Farm</a></p>
                         </div>

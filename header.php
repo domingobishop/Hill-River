@@ -26,7 +26,7 @@
                     </a>
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-md-6 col-head">
+                <div class="col-sm-8 col-md-6 col-head">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -40,7 +40,7 @@
                     </div>
                     <!-- /.navbar-collapse -->
                 </div>
-                <div class="col-md-3 col-head">
+                <div class="col-sm-4 col-md-3 col-head">
                     <div class="text-right call-us">
                         <a href="tel:+61888439178">Call us +61&nbsp;8&nbsp;88439178</a>
                     </div>
