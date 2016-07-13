@@ -84,6 +84,20 @@ function hay_meta_boxes() {
                     'id' => 'home_contact',
                     'type' => 'textarea',
                     'std' => ''
+                ),
+                array(
+                    'name' => 'Jaeschke\'s Hill River Estate Wine button URL',
+                    'desc' => 'For home page only',
+                    'id' => 'home_wine',
+                    'type' => 'text',
+                    'std' => ''
+                ),
+                array(
+                    'name' => 'Jaeschke\'s Broiler Farm button URL',
+                    'desc' => 'For home page only',
+                    'id' => 'home_farm',
+                    'type' => 'text',
+                    'std' => ''
                 )
             )
         )

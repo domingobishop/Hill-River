@@ -8,6 +8,9 @@
         <?php wp_title('|', true, 'right'); ?>
     </title>
     <?php wp_head(); ?>
+
+    <link rel='stylesheet'  href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.css' type='text/css' media='all' />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

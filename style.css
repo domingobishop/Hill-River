@@ -46,6 +46,9 @@ p a:hover, p a:focus {
 a.btn {
     text-decoration: none;
 }
+.modal-dialog {
+    z-index: 9999;
+}
 
 /**
  * Hyphenation
