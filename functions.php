@@ -58,38 +58,25 @@ function hay_meta_boxes() {
     $meta_boxes = array(
         // Level 1 page options
         array(
-            'id' => 'level_one_options',
+            'id' => 'hay_options',
             'title' => 'Page options',
             'pages' => 'page',
             'context' => 'normal',
             'priority' => 'high',
             'fields' => array(
                 array(
-                    'name' => 'Banner button text',
-                    'desc' => '',
-                    'id' => 'action_button_title',
-                    'type' => 'text',
+                    'name' => 'Our story text',
+                    'desc' => 'For home page only',
+                    'id' => 'home_story',
+                    'type' => 'textarea',
                     'std' => ''
-                ),
-                array(
-                    'name' => 'Banner button URL',
-                    'desc' => '',
-                    'id' => 'action_button_url',
-                    'type' => 'text',
-                    'std' => ''
-                ),
-                array(
-                    'name' => 'Number of boxes displayed',
-                    'id' => 'number_of_boxes',
-                    'type' => 'select',
-                    'options' => array('0', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12')
                 )
             )
         )
     );
     // Adds meta boxes page template
         foreach ( $meta_boxes as $meta_box ) {
-            $level_one_box = new create_meta_box( $meta_box );
+            $hay_box = new create_meta_box( $meta_box );
         }
 }
 add_action( 'init', 'hay_meta_boxes' );
